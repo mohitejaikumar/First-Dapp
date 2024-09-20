@@ -16,6 +16,7 @@ import { ShowBalance } from './ShowBalance';
 import { SignMessage } from './SignMessage';
 import { SendTokens } from './SendTokens';
 import AllTokens from './AllTokens';
+import LiquidityPool from './LiquidityPool';
 
 
 function App() {
@@ -31,11 +32,12 @@ function App() {
                       <WalletMultiButton />
                       <WalletDisconnectButton />
                     </div>
-                    <RequestAirdrop/>
+                    {/* <RequestAirdrop/>
                     <ShowBalance />
                     <SignMessage />
                     <SendTokens />
-                    <AllTokens />
+                    <AllTokens /> */}
+                    <LiquidityPool />
                   </WalletModalProvider>
               </WalletProvider>
       </ConnectionProvider>

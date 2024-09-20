@@ -141,6 +141,7 @@ export default function AllTokens(){
             transaction.recentBlockhash = blockHash.blockhash;
             //@ts-ignore
             const signed = await wallet.signTransaction(transaction);
+            
 
             const signature = await connection.sendRawTransaction(signed.serialize());
             alert(`Transaction signature: ${signature}`);
